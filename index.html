@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LIFE OS | Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>LIFE<span>OS</span></h2>
+                <small>Personal Life System</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <p class="nav-title">MAIN</p>
+
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Academics</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-fire"></i>
+                <span>Habits</span>
+            </a>
+
+            <p class="nav-title">LIFE</p>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Purpose</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
+
+            <div class="user-mini">
+
+                <div class="avatar">
+                    LM
+                </div>
+
+                <div class="user-info">
+                    <strong>Larisia</strong>
+                    <span>Student</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+                <span>Life OS</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Overview</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="top-profile">
+
+                    <div class="avatar">
+                        LM
+                    </div>
+
+                    <div>
+                        <strong>Larisia</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PAGE CONTENT ================= -->
+
+        <section class="dashboard">
+
+            <!-- WELCOME -->
+
+            <div class="welcome-section">
+
+                <div>
+                    <p class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        Friday, August 14, 2026
+                    </p>
+
+                    <h1>Good morning, Larisia 👋</h1>
+
+                    <p class="welcome-text">
+                        Here's an overview of your life and progress today.
+                    </p>
+                </div>
+
+                <button class="primary-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Activity
+                </button>
+
+            </div>
+
+
+            <!-- LIFE PROGRESS -->
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Your Life Progress</h2>
+                    <p>Track how you're doing across important areas.</p>
+                </div>
+
+                <button class="view-btn">
+                    View Analytics
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
+
+
+            <div class="progress-grid">
+
+                <!-- PURPOSE -->
+
+                <div class="progress-card">
+
+                    <div class="card-top">
+                        <div class="card-icon purpose">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            8%
+                        </span>
+                    </div>
+
+                    <h3>Purpose</h3>
+
+                    <div class="percentage">
+                        80<span>%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div style="width: 80%;"></div>
+                    </div>
+
+                    <p>You're moving in the right direction.</p>
+
+                </div>
+
+
+                <!-- ACADEMICS -->
+
+                <div class="progress-card">
+
+                    <div class="card-top">
+                        <div class="card-icon academics">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            5%
+                        </span>
+                    </div>
+
+                    <h3>Academics</h3>
+
+                    <div class="percentage">
+                        65<span>%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div style="width: 65%;"></div>
+                    </div>
+
+                    <p>Keep pushing your academic goals.</p>
+
+                </div>
+
+
+                <!-- SKILLS -->
+
+                <div class="progress-card">
+
+                    <div class="card-top">
+                        <div class="card-icon skills">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            12%
+                        </span>
+                    </div>
+
+                    <h3>Skills</h3>
+
+                    <div class="percentage">
+                        72<span>%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div style="width: 72%;"></div>
+                    </div>
+
+                    <p>Your skills are growing steadily.</p>
+
+                </div>
+
+
+                <!-- FINANCE -->
+
+                <div class="progress-card">
+
+                    <div class="card-top">
+                        <div class="card-icon finance">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+
+                        <span class="trend negative">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            3%
+                        </span>
+                    </div>
+
+                    <h3>Finance</h3>
+
+                    <div class="percentage">
+                        50<span>%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div style="width: 50%;"></div>
+                    </div>
+
+                    <p>Watch your spending this month.</p>
+
+                </div>
+
+
+                <!-- PERSONAL -->
+
+                <div class="progress-card">
+
+                    <div class="card-top">
+                        <div class="card-icon personal">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <span class="trend positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            10%
+                        </span>
+                    </div>
+
+                    <h3>Personal</h3>
+
+                    <div class="percentage">
+                        85<span>%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div style="width: 85%;"></div>
+                    </div>
+
+                    <p>Excellent personal development.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOWER GRID -->
+
+            <div class="content-grid">
+
+
+                <!-- TODAY'S FOCUS -->
+
+                <div class="dashboard-card tasks-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h2>Today's Focus</h2>
+                            <p>Stay focused on what matters.</p>
+                        </div>
+
+                        <button class="more-btn">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="task-list">
+
+                        <label class="task">
+
+                            <input type="checkbox">
+
+                            <span class="custom-check"></span>
+
+                            <div class="task-content">
+                                <strong>Study Database Systems</strong>
+                                <small>Academics · 1 hour</small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="task completed">
+
+                            <input type="checkbox" checked>
+
+                            <span class="custom-check"></span>
+
+                            <div class="task-content">
+                                <strong>Practice JavaScript</strong>
+                                <small>Skills · 45 minutes</small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="task">
+
+                            <input type="checkbox">
+
+                            <span class="custom-check"></span>
+
+                            <div class="task-content">
+                                <strong>Read 10 pages</strong>
+                                <small>Personal · 30 minutes</small>
+                            </div>
+
+                        </label>
+
+
+                        <label class="task">
+
+                            <input type="checkbox">
+
+                            <span class="custom-check"></span>
+
+                            <div class="task-content">
+                                <strong>Update career goals</strong>
+                                <small>Purpose · 20 minutes</small>
+                            </div>
+
+                        </label>
+
+                    </div>
+
+                    <button class="add-task">
+                        <i class="fa-solid fa-plus"></i>
+                        Add new task
+                    </button>
+
+                </div>
+
+
+                <!-- OPPORTUNITIES -->
+
+                <div class="dashboard-card opportunities-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h2>Opportunities</h2>
+                            <p>Don't miss your next opportunity.</p>
+                        </div>
+
+                        <button class="view-all">
+                            View all
+                        </button>
+
+                    </div>
+
+
+                    <div class="opportunity-list">
+
+
+                        <div class="opportunity">
+
+                            <div class="opportunity-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+
+                            <div class="opportunity-info">
+                                <strong>Web Development Internship</strong>
+                                <span>Tech Company · Internship</span>
+                                <small>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Deadline: Aug 20
+                                </small>
+                            </div>
+
+                            <button class="arrow-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="opportunity">
+
+                            <div class="opportunity-icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+
+                            <div class="opportunity-info">
+                                <strong>Technology Scholarship</strong>
+                                <span>Education Foundation · Scholarship</span>
+                                <small>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Deadline: Aug 25
+                                </small>
+                            </div>
+
+                            <button class="arrow-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+
+                        <div class="opportunity">
+
+                            <div class="opportunity-icon">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+
+                            <div class="opportunity-info">
+                                <strong>Young Innovators Program</strong>
+                                <span>Innovation Hub · Program</span>
+                                <small>
+                                    <i class="fa-regular fa-clock"></i>
+                                    Deadline: Sep 02
+                                </small>
+                            </div>
+
+                            <button class="arrow-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
