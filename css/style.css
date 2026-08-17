@@ -62,8 +62,8 @@ a {
 
 .sidebar {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
 
     width: var(--sidebar-width);
     height: 100vh;
@@ -78,7 +78,7 @@ a {
 }
 
 
-/* LOGO */
+/* ================= LOGO ================= */
 
 .logo {
     height: 90px;
@@ -126,7 +126,7 @@ a {
 }
 
 
-/* NAVIGATION */
+/* ================= NAVIGATION ================= */
 
 .navigation {
     padding: 22px 14px;
@@ -206,7 +206,7 @@ a {
 }
 
 
-/* SIDEBAR BOTTOM */
+/* ================= SIDEBAR BOTTOM ================= */
 
 .sidebar-bottom {
     padding: 14px;
@@ -243,7 +243,6 @@ a {
 .user-info {
     display: flex;
     flex-direction: column;
-
     flex: 1;
 }
 
@@ -267,119 +266,33 @@ a {
 .main-content {
     margin-left: var(--sidebar-width);
     min-height: 100vh;
+
+    padding-top: 72px;
 }
 
 
 /* ================= TOPBAR ================= */
 
 .topbar {
+    position: fixed;
+
+    top: 0;
+    left: var(--sidebar-width);
+    right: 0;
+
     height: 72px;
 
     padding: 0 32px;
 
     background: var(--white);
+
     border-bottom: 1px solid var(--border);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.breadcrumb {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    font-size: 13px;
-}
-
-.breadcrumb span {
-    color: var(--muted);
-}
-
-.breadcrumb i {
-    color: #cbd5e1;
-    font-size: 9px;
-}
-
-.breadcrumb strong {
-    color: var(--dark);
-}
-
-.topbar-actions {
-    display: flex;
-    align-items: center;
-    gap: 22px;
-}
-
-.icon-btn {
-    position: relative;
-
-    width: 38px;
-    height: 38px;
-
-    background: transparent;
-
-    color: var(--muted);
-
-    font-size: 17px;
-}
-
-.notification-dot {
-    position: absolute;
-
-    top: 6px;
-    right: 6px;
-
-    width: 7px;
-    height: 7px;
-
-    background: var(--danger);
-    border: 2px solid white;
-
-    border-radius: 50%;
-}
-
-.top-profile {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-}
-
-.top-profile .avatar {
-    width: 34px;
-    height: 34px;
-}
-
-.top-profile div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-}
-
-.top-profile strong {
-    font-size: 12px;
-    color: var(--dark);
-}
-
-.top-profile small {
-    font-size: 10px;
-    color: var(--muted);
-}
-
-.top-profile > i {
-    color: var(--muted);
-    font-size: 9px;
-    margin-left: 5px;
-}
-
-.menu-btn {
-    display: none;
-
-    width: 38px;
-    height: 38px;
-
-    background: transparent;
-    color: var(--dark);
+    z-index: 90;
 }
 
 
@@ -393,7 +306,7 @@ a {
 }
 
 
-/* WELCOME */
+/* ================= WELCOME ================= */
 
 .welcome-section {
     display: flex;
@@ -450,7 +363,7 @@ a {
 }
 
 
-/* SECTION HEADING */
+/* ================= SECTION HEADING ================= */
 
 .section-heading,
 .card-heading {
@@ -656,7 +569,7 @@ a {
 }
 
 
-/* TASKS */
+/* ================= TASKS ================= */
 
 .task-list {
     margin-top: 20px;
@@ -705,6 +618,7 @@ a {
     height: 100%;
 
     color: white;
+
     font-size: 11px;
     font-weight: bold;
 }
@@ -734,6 +648,7 @@ a {
 .add-task {
     display: flex;
     align-items: center;
+
     gap: 7px;
 
     background: transparent;
@@ -839,11 +754,13 @@ a {
 
 }
 
+
+/* TABLET / SMALL LAPTOP */
+
 @media (max-width: 900px) {
 
     .sidebar {
         transform: translateX(-100%);
-        transition: 0.3s ease;
     }
 
     .sidebar.open {
@@ -852,13 +769,11 @@ a {
 
     .main-content {
         margin-left: 0;
-    }
-
-    .menu-btn {
-        display: block;
+        padding-top: 72px;
     }
 
     .topbar {
+        left: 0;
         padding: 0 20px;
     }
 
@@ -876,6 +791,9 @@ a {
 
 }
 
+
+/* MOBILE */
+
 @media (max-width: 650px) {
 
     .dashboard {
@@ -885,6 +803,7 @@ a {
     .welcome-section {
         align-items: flex-start;
         flex-direction: column;
+
         gap: 18px;
     }
 
@@ -903,6 +822,9 @@ a {
 
 }
 
+
+/* SMALL MOBILE */
+
 @media (max-width: 430px) {
 
     .progress-grid {
@@ -911,6 +833,10 @@ a {
 
     .progress-card {
         padding: 16px;
+    }
+
+    .topbar {
+        padding: 0 15px;
     }
 
     .topbar-actions {
