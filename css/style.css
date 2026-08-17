@@ -265,11 +265,11 @@ a {
 
 .main-content {
     margin-left: var(--sidebar-width);
-    min-height: 100vh;
-
     padding-top: 72px;
-}
 
+    height: 100vh;
+    overflow-y: auto;
+}
 
 /* ================= TOPBAR ================= */
 
@@ -300,7 +300,7 @@ a {
 
 .dashboard {
     max-width: 1600px;
-    margin: auto;
+    margin:0 auto;
 
     padding: 32px;
 }
