@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LIFE OS | Purpose</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/purpose.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>LIFE<span>OS</span></h2>
+                <small>Personal Life System</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="../../index.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Academics</span>
+            </a>
+
+            <a href="skills.html" class="nav-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="goals.html" class="nav-item">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+
+            <a href="habits.html" class="nav-item">
+                <i class="fa-solid fa-fire"></i>
+                <span>Habits</span>
+            </a>
+
+            <p class="nav-title">LIFE</p>
+
+            <a href="finance.html" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="opportunities.html" class="nav-item">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="purpose.html" class="nav-item active">
+                <i class="fa-solid fa-compass"></i>
+                <span>Purpose</span>
+            </a>
+
+            <a href="analytics.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="notifications.html" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="user-mini">
+
+                <div class="avatar">LM</div>
+
+                <div class="user-info">
+                    <strong>Larisia</strong>
+                    <span>Student</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+
+                <span>Life OS</span>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <strong>Purpose</strong>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="top-profile">
+
+                    <div class="avatar">LM</div>
+
+                    <div>
+                        <strong>Larisia</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <section class="dashboard purpose-dashboard">
+
+            <!-- WELCOME -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <p class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        Friday, August 14, 2026
+                    </p>
+
+                    <h1>My Purpose 🎯</h1>
+
+                    <p class="welcome-text">
+                        Understand what drives you and turn your vision into action.
+                    </p>
+
+                </div>
+
+                <button class="primary-btn" id="addPurposeBtn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Goal
+
+                </button>
+
+            </div>
+
+
+            <!-- PURPOSE SCORE -->
+
+            <div class="purpose-overview">
+
+                <div class="purpose-score">
+
+                    <div class="purpose-circle">
+
+                        <span id="purposeScore">80</span>
+
+                        <small>%</small>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Purpose Progress</h2>
+
+                        <p>
+                            You're building a clearer direction for your future.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="purpose-stats">
+
+                    <div>
+                        <strong id="visionCount">3</strong>
+                        <span>Vision Areas</span>
+                    </div>
+
+                    <div>
+                        <strong id="purposeGoals">5</strong>
+                        <span>Active Goals</span>
+                    </div>
+
+                    <div>
+                        <strong id="completedGoals">2</strong>
+                        <span>Completed</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- VISION -->
+
+            <div class="purpose-grid">
+
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h2>My Vision</h2>
+
+                            <p>
+                                What kind of future are you building?
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="vision-content">
+
+                        <i class="fa-solid fa-compass"></i>
+
+                        <h3>
+                            Become a skilled software engineer
+                            who creates meaningful solutions.
+                        </h3>
+
+                        <p>
+                            I want to use technology, creativity and
+                            leadership to solve problems and create
+                            opportunities for young people.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VALUES -->
+
+                <div class="dashboard-card">
+
+                    <div class="card-heading">
+
+                        <div>
+                            <h2>My Core Values</h2>
+
+                            <p>
+                                Principles that guide your decisions.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="values-list">
+
+                        <span>Growth</span>
+
+                        <span>Integrity</span>
+
+                        <span>Leadership</span>
+
+                        <span>Creativity</span>
+
+                        <span>Service</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PURPOSE GOALS -->
+
+            <div class="dashboard-card purpose-goals-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Purpose Goals</h2>
+
+                        <p>
+                            Turn your purpose into measurable action.
+                        </p>
+                    </div>
+
+                    <button class="view-all">
+                        View all
+                    </button>
+
+                </div>
+
+
+                <div class="purpose-goal-list" id="purposeGoalList">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- ADD GOAL MODAL -->
+
+<div class="purpose-modal" id="purposeModal">
+
+    <div class="purpose-form">
+
+        <div class="form-header">
+
+            <div>
+                <h2>Add Purpose Goal</h2>
+
+                <p>
+                    Create a goal connected to your purpose.
+                </p>
+            </div>
+
+            <button id="closePurposeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <form id="purposeForm">
+
+            <div class="form-group">
+
+                <label for="purposeGoalName">
+                    Goal
+                </label>
+
+                <input
+                    type="text"
+                    id="purposeGoalName"
+                    placeholder="e.g. Build my portfolio"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="purposeCategory">
+                    Category
+                </label>
+
+                <select id="purposeCategory" required>
+
+                    <option value="">
+                        Select category
+                    </option>
+
+                    <option value="Career">
+                        Career
+                    </option>
+
+                    <option value="Education">
+                        Education
+                    </option>
+
+                    <option value="Leadership">
+                        Leadership
+                    </option>
+
+                    <option value="Personal">
+                        Personal
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-actions">
+
+                <button
+                    type="button"
+                    class="cancel-btn"
+                    id="cancelPurpose"
+                >
+                    Cancel
+                </button>
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    <i class="fa-solid fa-plus"></i>
+                    Add Goal
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="../js/purpose.js"></script>
+
+</body>
+
+</html>
