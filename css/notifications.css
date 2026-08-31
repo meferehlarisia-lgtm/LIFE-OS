@@ -1,0 +1,275 @@
+/* ================= NOTIFICATIONS ================= */
+
+.notifications-dashboard {
+    padding-bottom: 40px;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.notification-summary {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+}
+
+.notification-stat {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    padding: 18px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    box-shadow: var(--shadow);
+}
+
+.notification-stat-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-stat-icon.unread {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.notification-stat div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.notification-stat strong {
+    font-size: 20px;
+    color: var(--dark);
+}
+
+.notification-stat span {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+
+/* ================= NOTIFICATION CARD ================= */
+
+.notification-card {
+    margin-bottom: 24px;
+}
+
+.notification-list {
+    margin-top: 18px;
+}
+
+
+/* ================= NOTIFICATION ================= */
+
+.notification {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 4px;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+.unread-notification {
+    background: #f8fbff;
+
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-bottom: 4px;
+}
+
+
+/* ICON */
+
+.notification-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-icon.academic {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.notification-icon.goal {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.notification-icon.opportunity {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.notification-icon.finance {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.notification-icon.habit {
+    background: #fce7f3;
+    color: #db2777;
+}
+
+
+/* CONTENT */
+
+.notification-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.notification-content strong {
+    color: var(--dark);
+
+    font-size: 13px;
+}
+
+.notification-content p {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.5;
+}
+
+.notification-content small {
+    color: #94a3b8;
+
+    font-size: 9px;
+}
+
+.notification-content small i {
+    margin-right: 3px;
+}
+
+
+/* ACTION */
+
+.notification-action {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: var(--primary);
+
+    opacity: 0;
+
+    transition: 0.2s;
+}
+
+.notification:hover .notification-action {
+    opacity: 1;
+}
+
+.notification-action:hover {
+    background: var(--primary);
+    color: white;
+}
+
+
+/* ================= EMPTY ================= */
+
+.notification-empty {
+    display: none;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+}
+
+.notification-empty i {
+    font-size: 35px;
+
+    color: #94a3b8;
+
+    margin-bottom: 12px;
+}
+
+.notification-empty h3 {
+    color: var(--dark);
+
+    font-size: 16px;
+
+    margin-bottom: 6px;
+}
+
+.notification-empty p {
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .notification-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .notification {
+        align-items: flex-start;
+    }
+
+    .notification-action {
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,93 @@
+// ================= NOTIFICATIONS =================
+
+const notifications =
+    document.querySelectorAll(".notification");
+
+const unreadCount =
+    document.getElementById("unreadCount");
+
+const notificationCount =
+    document.getElementById("notificationCount");
+
+const markAllBtn =
+    document.getElementById("markAllBtn");
+
+const emptyMessage =
+    document.getElementById("emptyMessage");
+
+
+// ================= UPDATE COUNT =================
+
+function updateNotificationCount() {
+
+    const unread =
+        document.querySelectorAll(".unread-notification").length;
+
+    unreadCount.textContent = unread;
+
+    notificationCount.textContent = unread;
+
+    if (unread === 0) {
+
+        emptyMessage.style.display = "block";
+
+    } else {
+
+        emptyMessage.style.display = "none";
+
+    }
+}
+
+
+// ================= MARK ONE AS READ =================
+
+document.querySelectorAll(".mark-read").forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const notification =
+            button.closest(".notification");
+
+        notification.classList.remove("unread-notification");
+
+        button.remove();
+
+        updateNotificationCount();
+
+    });
+
+});
+
+
+// ================= MARK ALL AS READ =================
+
+markAllBtn.addEventListener("click", function () {
+
+    document
+        .querySelectorAll(".unread-notification")
+        .forEach(function (notification) {
+
+            notification.classList.remove(
+                "unread-notification"
+            );
+
+        });
+
+
+    document
+        .querySelectorAll(".mark-read")
+        .forEach(function (button) {
+
+            button.remove();
+
+        });
+
+
+    updateNotificationCount();
+
+});
+
+
+// ================= START =================
+
+updateNotificationCount();
