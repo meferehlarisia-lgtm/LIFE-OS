@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LIFE OS | Skills</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/skills.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>LIFE<span>OS</span></h2>
+                <small>Personal Life System</small>
+            </div>
+        </div>
+
+        <nav class="navigation">
+
+            <a href="../../index.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Academics</span>
+            </a>
+
+            <a href="skills.html" class="nav-item active">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="goals.html" class="nav-item">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+
+            <a href="habits.html" class="nav-item">
+                <i class="fa-solid fa-fire"></i>
+                <span>Habits</span>
+            </a>
+
+            <p class="nav-title">LIFE</p>
+
+            <a href="finance.html" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="opportunities.html" class="nav-item">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="purpose.html" class="nav-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Purpose</span>
+            </a>
+
+            <a href="analytics.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="notifications.html" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="user-mini">
+                <div class="avatar">LM</div>
+
+                <div class="user-info">
+                    <strong>Larisia</strong>
+                    <span>Student</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+                <span>Life OS</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Skills</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+
+                <div class="top-profile">
+
+                    <div class="avatar">LM</div>
+
+                    <div>
+                        <strong>Larisia</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- SKILLS CONTENT -->
+        <section class="dashboard skills-dashboard">
+
+            <div class="welcome-section">
+
+                <div>
+                    <p class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        Skills Development
+                    </p>
+
+                    <h1>My Skills 💻</h1>
+
+                    <p class="welcome-text">
+                        Track the skills you're learning and monitor your progress.
+                    </p>
+                </div>
+
+                <button class="primary-btn" id="addSkillBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Skill
+                </button>
+
+            </div>
+
+
+            <!-- SKILL SUMMARY -->
+            <div class="skill-summary">
+
+                <div class="skill-stat">
+                    <div class="skill-stat-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div>
+                        <span>Total Skills</span>
+                        <strong id="totalSkills">5</strong>
+                    </div>
+                </div>
+
+                <div class="skill-stat">
+                    <div class="skill-stat-icon">
+                        <i class="fa-solid fa-spinner"></i>
+                    </div>
+
+                    <div>
+                        <span>In Progress</span>
+                        <strong id="progressSkills">3</strong>
+                    </div>
+                </div>
+
+                <div class="skill-stat">
+                    <div class="skill-stat-icon">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+
+                    <div>
+                        <span>Completed</span>
+                        <strong id="completedSkills">2</strong>
+                    </div>
+                </div>
+
+                <div class="skill-stat">
+                    <div class="skill-stat-icon">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <div>
+                        <span>Average Progress</span>
+                        <strong id="averageSkill">68%</strong>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- SKILLS LIST -->
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>My Skills</h2>
+                        <p>Skills you're currently developing.</p>
+                    </div>
+
+                </div>
+
+                <div class="skills-list" id="skillsList"></div>
+
+            </div>
+
+
+            <!-- SKILL DEVELOPMENT -->
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Skill Development</h2>
+                        <p>Keep improving your abilities every day.</p>
+                    </div>
+
+                </div>
+
+                <div class="development-box">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <div>
+                        <strong>Keep learning consistently</strong>
+                        <p>
+                            Small improvements every day can turn into valuable
+                            professional skills over time.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/skills.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LIFE OS | Profile</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>LIFE<span>OS</span></h2>
+                <small>Personal Life System</small>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="../../index.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Academics</span>
+            </a>
+
+            <a href="skills.html" class="nav-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="goals.html" class="nav-item">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+
+            <a href="habits.html" class="nav-item">
+                <i class="fa-solid fa-fire"></i>
+                <span>Habits</span>
+            </a>
+
+
+            <p class="nav-title">LIFE</p>
+
+            <a href="finance.html" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="opportunities.html" class="nav-item">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="purpose.html" class="nav-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Purpose</span>
+            </a>
+
+            <a href="analytics.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+            <a href="notifications.html" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
+            </a>
+
+            <a href="profile.html" class="nav-item active">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <!-- SIDEBAR USER -->
+
+        <div class="sidebar-bottom">
+
+            <div class="user-mini">
+
+                <div class="avatar">
+                    LM
+                </div>
+
+                <div class="user-info">
+                    <strong id="sidebarName">Larisia</strong>
+                    <span>Student</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+
+                <span>Life OS</span>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <strong>Profile</strong>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+
+                <div class="top-profile">
+
+                    <div class="avatar" id="topAvatar">
+                        LM
+                    </div>
+
+                    <div>
+
+                        <strong id="topName">
+                            Larisia
+                        </strong>
+
+                        <small>
+                            Student
+                        </small>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PROFILE CONTENT ================= -->
+
+        <section class="dashboard profile-dashboard">
+
+
+            <!-- PROFILE HEADER -->
+
+            <div class="profile-header-card">
+
+                <div class="profile-cover"></div>
+
+
+                <div class="profile-header-content">
+
+                    <div class="profile-avatar">
+
+                        <span id="profileInitials">
+                            LM
+                        </span>
+
+                        <button class="avatar-edit" id="avatarEditBtn">
+
+                            <i class="fa-solid fa-camera"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-heading">
+
+                        <h1 id="profileName">
+                            Larisia Mefereh
+                        </h1>
+
+                        <p>
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Software Engineering Student
+                        </p>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Yaoundé, Cameroon
+                        </span>
+
+                    </div>
+
+
+                    <button class="primary-btn" id="editProfileBtn">
+
+                        <i class="fa-solid fa-pen"></i>
+
+                        Edit Profile
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE GRID -->
+
+            <div class="profile-grid">
+
+
+                <!-- ================= PERSONAL INFORMATION ================= -->
+
+                <div class="dashboard-card profile-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h2>Personal Information</h2>
+
+                            <p>
+                                Your basic personal details.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-info-list">
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-user"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Full Name</small>
+
+                                <strong id="infoName">
+                                    Larisia Mefereh
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-envelope"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Email</small>
+
+                                <strong id="infoEmail">
+                                    larisia@example.com
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Phone</small>
+
+                                <strong id="infoPhone">
+                                    +237 6XX XXX XXX
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-location-dot"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Location</small>
+
+                                <strong id="infoLocation">
+                                    Yaoundé, Cameroon
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ACADEMIC INFORMATION ================= -->
+
+                <div class="dashboard-card profile-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h2>Academic Information</h2>
+
+                            <p>
+                                Your current academic profile.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-info-list">
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-building-columns"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Institution</small>
+
+                                <strong>
+                                    University
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-code"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Program</small>
+
+                                <strong>
+                                    Software Engineering
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Level</small>
+
+                                <strong>
+                                    Undergraduate
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <div class="info-icon">
+
+                                <i class="fa-solid fa-calendar"></i>
+
+                            </div>
+
+                            <div>
+
+                                <small>Academic Year</small>
+
+                                <strong>
+                                    2026 / 2027
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= SKILLS ================= -->
+
+                <div class="dashboard-card profile-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h2>My Skills</h2>
+
+                            <p>
+                                Skills you're currently developing.
+                            </p>
+
+                        </div>
+
+                        <button class="view-all"
+                            onclick="window.location.href='skills.html'">
+
+                            View Skills
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="profile-skills">
+
+                        <span>HTML</span>
+
+                        <span>CSS</span>
+
+                        <span>JavaScript</span>
+
+                        <span>Git & GitHub</span>
+
+                        <span>Photoshop</span>
+
+                        <span>Web Design</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= LIFE PROGRESS ================= -->
+
+                <div class="dashboard-card profile-card">
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h2>LIFE OS Progress</h2>
+
+                            <p>
+                                Your current development overview.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="profile-progress">
+
+
+                        <div class="profile-progress-item">
+
+                            <div>
+
+                                <span>Purpose</span>
+
+                                <strong>80%</strong>
+
+                            </div>
+
+                            <div class="mini-progress">
+
+                                <span style="width:80%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-progress-item">
+
+                            <div>
+
+                                <span>Academics</span>
+
+                                <strong>65%</strong>
+
+                            </div>
+
+                            <div class="mini-progress">
+
+                                <span style="width:65%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-progress-item">
+
+                            <div>
+
+                                <span>Skills</span>
+
+                                <strong>72%</strong>
+
+                            </div>
+
+                            <div class="mini-progress">
+
+                                <span style="width:72%"></span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="profile-progress-item">
+
+                            <div>
+
+                                <span>Personal</span>
+
+                                <strong>85%</strong>
+
+                            </div>
+
+                            <div class="mini-progress">
+
+                                <span style="width:85%"></span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= ACCOUNT ================= -->
+
+            <div class="dashboard-card account-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h2>Account</h2>
+
+                        <p>
+                            Manage your LIFE OS account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="account-actions">
+
+                    <button class="account-action">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <div>
+
+                            <strong>Change Password</strong>
+
+                            <small>
+                                Update your account password.
+                            </small>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+
+                    <button class="account-action">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                        <div>
+
+                            <strong>Notification Settings</strong>
+
+                            <small>
+                                Manage your notifications.
+                            </small>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+
+                    <button class="account-action danger">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        <div>
+
+                            <strong>Log Out</strong>
+
+                            <small>
+                                Sign out of LIFE OS.
+                            </small>
+
+                        </div>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- EDIT PROFILE MODAL -->
+
+<div class="modal-overlay" id="profileModal">
+
+    <div class="profile-modal">
+
+        <div class="modal-header">
+
+            <div>
+
+                <h2>Edit Profile</h2>
+
+                <p>Update your personal information.</p>
+
+            </div>
+
+            <button class="close-modal" id="closeModal">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <form id="profileForm">
+
+            <label>
+
+                Full Name
+
+                <input
+                    type="text"
+                    id="editName"
+                    value="Larisia Mefereh"
+                    required>
+
+            </label>
+
+
+            <label>
+
+                Email
+
+                <input
+                    type="email"
+                    id="editEmail"
+                    value="larisia@example.com"
+                    required>
+
+            </label>
+
+
+            <label>
+
+                Phone
+
+                <input
+                    type="text"
+                    id="editPhone"
+                    value="+237 6XX XXX XXX">
+
+            </label>
+
+
+            <label>
+
+                Location
+
+                <input
+                    type="text"
+                    id="editLocation"
+                    value="Yaoundé, Cameroon">
+
+            </label>
+
+
+            <div class="modal-actions">
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                    id="cancelEdit">
+
+                    Cancel
+
+                </button>
+
+                <button
+                    type="submit"
+                    class="primary-btn">
+
+                    Save Changes
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="../js/profile.js"></script>
+
+</body>
+</html>
