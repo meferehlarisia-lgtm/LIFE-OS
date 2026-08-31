@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LIFE OS | Notifications</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>LIFE<span>OS</span></h2>
+                <small>Personal Life System</small>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="../index.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Academics</span>
+            </a>
+
+            <a href="skills.html" class="nav-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="goals.html" class="nav-item">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+
+            <a href="habits.html" class="nav-item">
+                <i class="fa-solid fa-fire"></i>
+                <span>Habits</span>
+            </a>
+
+
+            <p class="nav-title">LIFE</p>
+
+
+            <a href="finance.html" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="opportunities.html" class="nav-item">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="purpose.html" class="nav-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Purpose</span>
+            </a>
+
+            <a href="analytics.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+
+            <a href="notifications.html" class="nav-item active">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count" id="notificationCount">3</span>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <!-- USER -->
+
+        <div class="sidebar-bottom">
+
+            <div class="user-mini">
+
+                <div class="avatar">
+                    LM
+                </div>
+
+                <div class="user-info">
+                    <strong>Larisia</strong>
+                    <span>Student</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+
+                <span>Life OS</span>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <strong>Notifications</strong>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+
+                <div class="top-profile">
+
+                    <div class="avatar">
+                        LM
+                    </div>
+
+                    <div>
+                        <strong>Larisia</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= NOTIFICATIONS ================= -->
+
+        <section class="dashboard notifications-dashboard">
+
+
+            <!-- HEADER -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <p class="date">
+                        <i class="fa-regular fa-calendar"></i>
+                        Notifications Center
+                    </p>
+
+                    <h1>Notifications 🔔</h1>
+
+                    <p class="welcome-text">
+                        Stay updated with your activities, goals and opportunities.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-btn" id="markAllBtn">
+
+                    <i class="fa-solid fa-check-double"></i>
+
+                    Mark all as read
+
+                </button>
+
+            </div>
+
+
+            <!-- NOTIFICATION SUMMARY -->
+
+            <div class="notification-summary">
+
+                <div class="notification-stat">
+
+                    <div class="notification-stat-icon unread">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div>
+                        <strong id="unreadCount">3</strong>
+                        <span>Unread</span>
+                    </div>
+
+                </div>
+
+
+                <div class="notification-stat">
+
+                    <div class="notification-stat-icon">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+
+                    <div>
+                        <strong>2</strong>
+                        <span>Reminders</span>
+                    </div>
+
+                </div>
+
+
+                <div class="notification-stat">
+
+                    <div class="notification-stat-icon">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+
+                    <div>
+                        <strong>1</strong>
+                        <span>Opportunity</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATION CARD -->
+
+            <div class="dashboard-card notification-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h2>Recent Notifications</h2>
+
+                        <p>
+                            Your latest LIFE OS updates.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="notification-list" id="notificationList">
+
+
+                    <!-- NOTIFICATION 1 -->
+
+                    <div class="notification unread-notification">
+
+                        <div class="notification-icon academic">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>Academic reminder</strong>
+
+                            <p>
+                                Your Database Systems study session is scheduled for today.
+                            </p>
+
+                            <small>
+                                <i class="fa-regular fa-clock"></i>
+                                10 minutes ago
+                            </small>
+
+                        </div>
+
+                        <button class="notification-action mark-read">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 2 -->
+
+                    <div class="notification unread-notification">
+
+                        <div class="notification-icon goal">
+
+                            <i class="fa-solid fa-bullseye"></i>
+
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>Goal reminder</strong>
+
+                            <p>
+                                You have 3 active goals that need your attention.
+                            </p>
+
+                            <small>
+                                <i class="fa-regular fa-clock"></i>
+                                1 hour ago
+                            </small>
+
+                        </div>
+
+                        <button class="notification-action mark-read">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 3 -->
+
+                    <div class="notification unread-notification">
+
+                        <div class="notification-icon opportunity">
+
+                            <i class="fa-solid fa-rocket"></i>
+
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>New opportunity</strong>
+
+                            <p>
+                                A new Web Development Internship opportunity is available.
+                            </p>
+
+                            <small>
+                                <i class="fa-regular fa-clock"></i>
+                                2 hours ago
+                            </small>
+
+                        </div>
+
+                        <button class="notification-action mark-read">
+                            <i class="fa-solid fa-check"></i>
+                        </button>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 4 -->
+
+                    <div class="notification">
+
+                        <div class="notification-icon finance">
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>Finance update</strong>
+
+                            <p>
+                                Your current balance has been updated.
+                            </p>
+
+                            <small>
+                                <i class="fa-regular fa-clock"></i>
+                                Yesterday
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 5 -->
+
+                    <div class="notification">
+
+                        <div class="notification-icon habit">
+
+                            <i class="fa-solid fa-fire"></i>
+
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>Habit progress</strong>
+
+                            <p>
+                                You have maintained your reading habit for 5 days.
+                            </p>
+
+                            <small>
+                                <i class="fa-regular fa-clock"></i>
+                                Yesterday
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMPTY MESSAGE -->
+
+            <div class="notification-empty" id="emptyMessage">
+
+                <i class="fa-regular fa-bell-slash"></i>
+
+                <h3>You're all caught up!</h3>
+
+                <p>
+                    There are no unread notifications.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/notifications.js"></script>
+
+</body>
+</html>
