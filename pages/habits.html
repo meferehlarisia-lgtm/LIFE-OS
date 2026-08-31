@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LIFE OS | Habits</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/habits.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+
+            <div>
+                <h2>LIFE<span>OS</span></h2>
+                <small>Personal Life System</small>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="../../index.html" class="nav-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Overview</span>
+            </a>
+
+            <a href="academics.html" class="nav-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Academics</span>
+            </a>
+
+            <a href="skills.html" class="nav-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="goals.html" class="nav-item">
+                <i class="fa-solid fa-bullseye"></i>
+                <span>Goals</span>
+            </a>
+
+            <a href="habits.html" class="nav-item active">
+                <i class="fa-solid fa-fire"></i>
+                <span>Habits</span>
+            </a>
+
+
+            <p class="nav-title">LIFE</p>
+
+
+            <a href="finance.html" class="nav-item">
+                <i class="fa-solid fa-wallet"></i>
+                <span>Finance</span>
+            </a>
+
+            <a href="opportunities.html" class="nav-item">
+                <i class="fa-solid fa-rocket"></i>
+                <span>Opportunities</span>
+            </a>
+
+            <a href="purpose.html" class="nav-item">
+                <i class="fa-solid fa-compass"></i>
+                <span>Purpose</span>
+            </a>
+
+            <a href="analytics.html" class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Analytics</span>
+            </a>
+
+
+            <p class="nav-title">ACCOUNT</p>
+
+
+            <a href="notifications.html" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+                <span class="notification-count">3</span>
+            </a>
+
+            <a href="profile.html" class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="user-mini">
+
+                <div class="avatar">
+                    LM
+                </div>
+
+                <div class="user-info">
+                    <strong>Larisia</strong>
+                    <span>Student</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="breadcrumb">
+
+                <span>Life OS</span>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <strong>Habits</strong>
+
+            </div>
+
+
+            <div class="topbar-actions">
+
+                <button class="icon-btn">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+
+                <div class="top-profile">
+
+                    <div class="avatar">
+                        LM
+                    </div>
+
+                    <div>
+                        <strong>Larisia</strong>
+                        <small>Student</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= HABITS CONTENT ================= -->
+
+        <section class="dashboard habits-dashboard">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome-section">
+
+                <div>
+
+                    <p class="date">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        Daily Habit Tracker
+
+                    </p>
+
+                    <h1>My Habits 🔥</h1>
+
+                    <p class="welcome-text">
+
+                        Build better routines and become consistent every day.
+
+                    </p>
+
+                </div>
+
+
+                <button class="primary-btn" id="addHabitBtn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Habit
+
+                </button>
+
+            </div>
+
+
+            <!-- ================= HABIT STATISTICS ================= -->
+
+            <div class="habit-summary">
+
+
+                <div class="habit-stat">
+
+                    <div class="habit-stat-icon">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Total Habits</span>
+
+                        <strong id="totalHabits">0</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habit-stat">
+
+                    <div class="habit-stat-icon">
+
+                        <i class="fa-solid fa-check"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Completed Today</span>
+
+                        <strong id="completedToday">0</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habit-stat">
+
+                    <div class="habit-stat-icon">
+
+                        <i class="fa-solid fa-fire"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Best Streak</span>
+
+                        <strong id="bestStreak">0 days</strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habit-stat">
+
+                    <div class="habit-stat-icon">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>Today's Progress</span>
+
+                        <strong id="todayProgress">0%</strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= TODAY'S HABITS ================= -->
+
+            <div class="dashboard-card">
+
+                <div class="card-heading">
+
+                    <div>
+
+                        <h2>Today's Habits</h2>
+
+                        <p>
+                            Complete your habits and maintain your streak.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="habit-list" id="habitList"></div>
+
+            </div>
+
+
+            <!-- ================= MOTIVATION ================= -->
+
+            <div class="dashboard-card">
+
+                <div class="habit-motivation">
+
+                    <div class="motivation-icon">
+
+                        <i class="fa-solid fa-fire"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3>Consistency creates progress.</h3>
+
+                        <p>
+                            You don't need to be perfect.
+                            You just need to keep showing up.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/habits.js"></script>
+
+</body>
+</html>
